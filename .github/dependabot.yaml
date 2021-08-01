@@ -1,0 +1,24 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      # <day> ::= monday|tuesday|wednesday|thursday|friday|saturday|sunday
+      day: tuesday
+
+      # <interval> ::= daily | weekly | monthly
+      interval: weekly
+
+      time: '02:45'
+      timezone: Etc/UTC
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      # <day> ::= monday|tuesday|wednesday|thursday|friday|saturday|sunday
+      day: tuesday
+
+      # <interval> ::= daily | weekly | monthly
+      interval: weekly
+
+      time: '02:45'
+      timezone: Etc/UTC

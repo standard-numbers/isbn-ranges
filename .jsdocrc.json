@@ -1,0 +1,30 @@
+{
+  "opts": {
+    "destination": "./docs/",
+    "encoding": "utf8",
+    "pedantic": true,
+    "recurse": true,
+    "template": "templates/default"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "recurseDepth": 2,
+  "source": {
+    "includePattern": "(?:src|test)?/.+\\.js$"
+  },
+  "sourceType": "module",
+  "tags": {
+    "allowUnknownTags": false,
+    "dictionaries": [
+      "jsdoc"
+    ]
+  },
+  "templates": {
+    "cleverLinks": true,
+    "default": {
+      "outputSourceFiles": true
+    },
+    "monospaceLinks": false
+  }
+}

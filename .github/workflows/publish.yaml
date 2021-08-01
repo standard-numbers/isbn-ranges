@@ -1,0 +1,33 @@
+name: Publish the package
+on:
+  push:
+    tags:
+      - '**'
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+      - name: Set up a Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          # `actions/setup-node` provides cacheable images of LTS releases.
+          node-version: '14.15.0'
+
+          # See <https://github.com/actions/setup-node/pull/299/>.
+          # cache: npm
+
+          # Will be used when creating the `.npmrc` file.
+          registry-url: https://registry.npmjs.org/
+      - name: Build the package
+        run: |
+          npm ci --ignore-scripts
+          npm run build
+      - name: Publish the package
+        # Instead of `npm publish --access=...`,
+        # use `publishConfig.access` in `package.json`.
+        run: |
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

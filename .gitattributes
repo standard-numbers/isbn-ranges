@@ -1,0 +1,8 @@
+# Default settings for all files.
+# Use "text" if .gitignore allows tracking of only text files.
+# Use "text=auto" if .gitignore allows tracking of both text and binary files.
+* text eol=lf whitespace=tab-in-indent,tabwidth=2
+
+# Markdown.
+# 4 spaces are required for indentation.
+*.md diff=markdown whitespace=tab-in-indent,tabwidth=4
