@@ -4,7 +4,7 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
+indent_size = tab
 indent_style = space
 insert_final_newline = true
 max_line_length = off
@@ -13,8 +13,9 @@ trim_trailing_whitespace = true
 
 # Markdown.
 # 4 spaces are required for indentation.
+# 2 trailing spaces make a line break.
 [*.md]
-indent_size = 4
+indent_size = tab
 indent_style = space
 tab_width = 4
 trim_trailing_whitespace = false
