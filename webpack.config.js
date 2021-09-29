@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 const filename = fileURLToPath(import.meta.url);
 
 const directoryName = dirname(filename);
+
 const outputDirectoryName = resolve(directoryName, 'lib');
 const sourceDirectoryName = resolve(directoryName, 'src');
 
@@ -30,6 +31,12 @@ const WebpackConfig = {
    * Experiments.
    */
   experiments: {
+    /**
+     * Use defaults of the next major webpack version.
+     * @see {@link https://github.com/webpack/webpack/releases/tag/v5.53.0/}
+     */
+    futureDefaults: true,
+
     /**
      * If {@link WebpackConfig.output.library.type|output.library.type}
      * is `"module"`, then set this property to `true`.
@@ -118,15 +125,6 @@ const WebpackConfig = {
         ],
       },
     ],
-  },
-
-  /** @namespace */
-  optimization: {
-    /**
-     * A fix for {@link WebpackConfig.externalsType|externalsType}: `'module'`.
-     * @see {@link https://github.com/webpack/webpack/issues/2933/}
-     */
-    concatenateModules: false,
   },
 
   /** @namespace */
