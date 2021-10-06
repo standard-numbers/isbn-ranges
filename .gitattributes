@@ -5,4 +5,5 @@
 
 # Markdown.
 # 4 spaces are required for indentation.
-*.md diff=markdown whitespace=tab-in-indent,tabwidth=4
+# 2 trailing spaces make a line break.
+*.md diff=markdown whitespace=-blank-at-eol,tab-in-indent,tabwidth=4
