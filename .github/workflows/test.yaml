@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-          # See <https://github.com/actions/setup-node/pull/299/>.
-          # cache: npm
+          cache: npm
+          cache-dependency-path: npm-shrinkwrap.json
       - name: Test
         run: |
           npm ci --ignore-scripts
