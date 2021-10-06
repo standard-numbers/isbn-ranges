@@ -121,15 +121,6 @@ const WebpackConfig = {
   },
 
   /** @namespace */
-  optimization: {
-    /**
-     * A fix for {@link WebpackConfig.externalsType|externalsType}: `'module'`.
-     * @see {@link https://github.com/webpack/webpack/issues/2933/}
-     */
-    concatenateModules: false,
-  },
-
-  /** @namespace */
   output: {
     /**
      * The value of `[name]` is a key of the
