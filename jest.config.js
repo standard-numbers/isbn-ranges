@@ -24,6 +24,7 @@ const JestConfig = {
   },
   injectGlobals: false,
   moduleFileExtensions: [
+    // The most commonly used extensions should be listed first.
     'ts',
     'js', // Must be included.
   ],
