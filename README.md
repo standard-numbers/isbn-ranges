@@ -1,5 +1,9 @@
 # ISBN ranges
 
+![node/v](https://img.shields.io/node/v/@standard-numbers/isbn-ranges?label=Node.js&logo=nodedotjs)
+![npm/v](https://img.shields.io/npm/v/@standard-numbers/isbn-ranges?label=latest&logo=npm)
+![github/workflow](https://img.shields.io/github/workflow/status/standard-numbers/isbn-ranges/Test?label=test&logo=github)
+
 This Node.js module allows to download the latest ISBN range message from the International ISBN Agency website and convert the data to the JSON format. Visit <https://www.isbn-international.org/range_file_generation/> to see details.
 
 ## License
