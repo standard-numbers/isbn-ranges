@@ -31,6 +31,12 @@ const WebpackConfig = {
    */
   experiments: {
     /**
+     * Use defaults of the next major webpack version.
+     * @see {@link https://github.com/webpack/webpack/releases/tag/v5.53.0/}
+     */
+    futureDefaults: true,
+
+    /**
      * If {@link WebpackConfig.output.library.type|output.library.type}
      * is `"module"`, then set this property to `true`.
      * @see {@link https://webpack.js.org/configuration/output/#type-module}
