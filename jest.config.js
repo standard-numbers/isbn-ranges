@@ -14,7 +14,7 @@
  */
 const JestConfig = {
   extensionsToTreatAsEsm: [
-    // In addition to `.js`.
+    // In addition to `.js` and `.mjs`.
     '.ts',
   ],
   globals: {
@@ -24,8 +24,9 @@ const JestConfig = {
   },
   injectGlobals: false,
   moduleFileExtensions: [
+    // The most commonly used extensions should be listed first.
     'ts',
-    'js', // Required.
+    'js', // Must be included.
   ],
   preset: 'ts-jest/presets/default-esm',
   roots: [
