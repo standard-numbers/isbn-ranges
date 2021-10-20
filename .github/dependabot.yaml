@@ -22,3 +22,4 @@ updates:
 
       time: '02:45'
       timezone: Etc/UTC
+    versioning-strategy: increase
