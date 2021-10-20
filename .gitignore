@@ -12,12 +12,6 @@
 !.github/**/
 !.github/**/*.yaml
 
-!lib/
-!lib/**/
-!lib/**/*.d.ts
-!lib/**/*.js
-!lib/**/*.js.map
-
 !src/
 !src/**/
 !src/**/*.ts
