@@ -10,7 +10,7 @@ import { URL } from './types/url';
 export default (
   url: URL = 'https://www.isbn-international.org/export_rangemessage.xml',
 ): Promise<string> => new Promise((resolve, reject) => {
-  axios.get(url, {
+  axios.get<string>(url, {
     maxBodyLength: 0,
     maxContentLength: 1024 * 1024, // B
     maxRedirects: 0,
