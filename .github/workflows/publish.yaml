@@ -15,8 +15,8 @@ jobs:
           # `actions/setup-node` provides cacheable images of LTS releases.
           node-version: '14.15.0'
 
-          # See <https://github.com/actions/setup-node/pull/299/>.
-          # cache: npm
+          cache: npm
+          cache-dependency-path: npm-shrinkwrap.json
 
           # Will be used when creating the `.npmrc` file.
           registry-url: https://registry.npmjs.org/
