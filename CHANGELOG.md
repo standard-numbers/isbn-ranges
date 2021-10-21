@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+None.
+
+## [0.1.1] - 2021-10-21
+
 ### Added
 
 - `CHANGELOG.md`.
@@ -18,5 +22,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Initial version.
 
-[Unreleased]: https://github.com/standard-numbers/isbn-ranges/compare/v0.1.0...HEAD/
+[Unreleased]: https://github.com/standard-numbers/isbn-ranges/compare/v0.1.1...HEAD/
+[0.1.1]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.1/
 [0.1.0]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.0/
