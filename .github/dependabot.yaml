@@ -4,22 +4,22 @@ updates:
     directory: /
     schedule:
       # <day> ::= monday|tuesday|wednesday|thursday|friday|saturday|sunday
-      day: tuesday
+      # day: tuesday
 
       # <interval> ::= daily | weekly | monthly
-      interval: weekly
+      interval: monthly
 
-      time: '02:45'
-      timezone: Etc/UTC
+      # time: '02:45'
+      # timezone: Etc/UTC
   - package-ecosystem: npm
     directory: /
     schedule:
       # <day> ::= monday|tuesday|wednesday|thursday|friday|saturday|sunday
-      day: tuesday
+      # day: tuesday
 
       # <interval> ::= daily | weekly | monthly
-      interval: weekly
+      interval: monthly
 
-      time: '02:45'
-      timezone: Etc/UTC
+      # time: '02:45'
+      # timezone: Etc/UTC
     versioning-strategy: increase
