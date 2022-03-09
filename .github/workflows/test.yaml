@@ -13,7 +13,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
       - name: Set up a Node.js ${{ matrix.node }} environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
           cache: npm
