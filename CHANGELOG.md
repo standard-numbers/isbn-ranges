@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 None.
 
+## [0.1.2] - 2022-03-09
+
+### Security
+
+- Fixed [CVE-2022-0155](https://github.com/advisories/GHSA-74fj-2j2h-c42q/) ([7ba262f](https://github.com/standard-numbers/isbn-ranges/commit/7ba262f8d0b617aff6fd3a73394d80f32b1da62b)).
+- Fixed [CVE-2022-0536](https://github.com/advisories/GHSA-pw2r-vq6v-hr8c/) ([7ba262f](https://github.com/standard-numbers/isbn-ranges/commit/7ba262f8d0b617aff6fd3a73394d80f32b1da62b)).
+
 ## [0.1.1] - 2021-10-21
 
 ### Added
@@ -22,6 +29,7 @@ None.
 
 - Initial version.
 
-[Unreleased]: https://github.com/standard-numbers/isbn-ranges/compare/v0.1.1...HEAD/
+[Unreleased]: https://github.com/standard-numbers/isbn-ranges/compare/v0.1.2...HEAD/
+[0.1.2]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.2/
 [0.1.1]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.1/
 [0.1.0]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.0/

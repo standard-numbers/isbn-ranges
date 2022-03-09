@@ -1,6 +1,6 @@
 {
   "name": "@standard-numbers/isbn-ranges",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Download the ISBN ranges in the JSON format.",
   "keywords": [
     "ISBN"
