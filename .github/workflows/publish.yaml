@@ -10,7 +10,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
       - name: Set up a Node.js environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           # `actions/setup-node` provides cacheable images of LTS releases.
           node-version: '14.17.0'
