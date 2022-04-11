@@ -13,8 +13,8 @@ import { JSONValue } from './types/json-value';
 export default (
   objects: JSONValue[],
   expr: JMESPath | JMESPath[] | undefined = [
-    'ISBNRangeMessage.MessageDate',
-    'ISBNRangeMessage.MessageSerialNumber',
+    'ISBNRangeMessage."EAN.UCCPrefixes"',
+    'ISBNRangeMessage.RegistrationGroups',
   ],
 ): Promise<boolean> => new Promise((resolve, reject) => {
   const expressions = (Array.isArray(expr)) ? expr : [expr];
@@ -22,7 +22,7 @@ export default (
     // `[].every` returns true.
     return reject(new Error('No JMESPath expressions are passed'));
   }
-  if (!Array.isArray(objects) || objects.length < 2) {
+  if (!Array.isArray(objects) || (objects.length < 2)) {
     return reject(new Error('Less than 2 objects are passed for comparison'));
   }
   return resolve(expressions.every((expression) => {
@@ -33,6 +33,9 @@ export default (
       }
       return value;
     });
-    return new Set(values).size === 1;
+    const reference = JSON.stringify(values.slice(-1)[0]);
+    return values.slice(0, -1).every((value) => {
+      return reference === JSON.stringify(value);
+    });
   }));
 });

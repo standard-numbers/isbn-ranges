@@ -16,8 +16,8 @@ describe('The equal function', () => {
     expect.assertions(1);
     const object = {
       ISBNRangeMessage: {
-        MessageDate: 'value1',
-        MessageSerialNumber: 'value2',
+        'EAN.UCCPrefixes': 'value1',
+        RegistrationGroups: 'value2',
       },
     };
     return expect(equal([object, object])).resolves.toEqual(true);
