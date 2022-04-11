@@ -13,7 +13,7 @@ trim_trailing_whitespace = true
 
 # Markdown.
 # 4 spaces are required for indentation.
-# 2 trailing spaces make a line break.
+# 2 trailing spaces indicate a line break.
 [*.md]
 indent_size = tab
 indent_style = space

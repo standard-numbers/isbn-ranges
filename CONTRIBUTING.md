@@ -5,10 +5,11 @@ Please, use the Node.js version specified in `.github/workflows/test.yaml`.
 ## Pull requests
 
 1. Fork the repository.
-2. Clone the fork (`git clone`).
-3. `npm ci --ignore-scripts`.
-4. Make changes, but do not modify the license text.
-5. Run the following commands:
+2. Clone the fork (`git clone ...`).
+3. Change the working directory (`cd ...`).
+4. Run `npm ci --ignore-scripts`.
+5. Make changes, but do not modify the license text.
+6. Run the following commands:
 
     ```sh
     git diff --check
@@ -18,6 +19,6 @@ Please, use the Node.js version specified in `.github/workflows/test.yaml`.
     ```
 
     If there are errors, fix them and repeat the step.
-6. `npm pack`. If there are errors, fix them and go back to step 5.
-7. Commit, then push the changes to the fork repository.
-8. Make a [pull request](https://github.com/standard-numbers/isbn-ranges/pulls).
+7. Run `npm pack`. If there are errors, fix them and go back to step 6.
+8. Commit, then push the changes to the fork repository.
+9. Make a [pull request](https://github.com/standard-numbers/isbn-ranges/pulls).
