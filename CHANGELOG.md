@@ -8,6 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 None.
 
+## [0.1.3] - 2022-04-11
+
+## Fixed
+
+- The `MessageSerialNumber` and `MessageDate` values are now unique on every request to the International ISBN Agency site, so the versioning can only be done by comparing the `"EAN.UCCPrefixes"` and `RegistrationGroups` values. The default value of the second parameter of the `equal` function has been changed accordingly.
+
 ## [0.1.2] - 2022-03-09
 
 ### Security
@@ -29,7 +35,8 @@ None.
 
 - Initial version.
 
-[Unreleased]: https://github.com/standard-numbers/isbn-ranges/compare/v0.1.2...HEAD/
+[Unreleased]: https://github.com/standard-numbers/isbn-ranges/compare/v0.1.3...HEAD/
+[0.1.2]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.3/
 [0.1.2]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.2/
 [0.1.1]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.1/
 [0.1.0]: https://github.com/standard-numbers/isbn-ranges/releases/tag/v0.1.0/
