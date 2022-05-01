@@ -17,17 +17,17 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v2
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v1
+        uses: github/codeql-action/init@v2
         with:
           languages: ${{ matrix.language }}
       - name: Build CodeQL
-        uses: github/codeql-action/autobuild@v1
+        uses: github/codeql-action/autobuild@v2
         # If `autobuild` fails, remove it and uncomment the following 3 lines:
         # run: |
         #   make bootstrap
         #   make release
       - name: Perform the analysis
-        uses: github/codeql-action/analyze@v1
+        uses: github/codeql-action/analyze@v2
     strategy:
       matrix:
         language:
